@@ -1,7 +1,10 @@
 body {
-  margin: 80px auto 175px;
-  padding: 0;
-  max-width: 1710px;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 175px 175px 175px;
   color: #303030;
 }
 
@@ -27,6 +30,7 @@ nav ul li a {
 
 .color-grey {
   background-color: #303030;
+  color: #ffffff;
 }
 
 .text-color-white {
@@ -45,8 +49,8 @@ button {
 }
 
 button:hover {
-  background-color: inherit;
-  color: inherit;
+  /* background-color: inherit; */
+  /* color: inherit; */
 }
 
 /* ---------------------------------- */
@@ -62,12 +66,15 @@ button:hover {
   font-style: italic;
   font-weight: 800; /*exbold*/
   font-size: 64px;
+  margin: 0;
 }
 
 .text-64px-reg {
   font-family: "Playfair Display", serif;
   font-weight: 400; /*regular*/
   font-size: 64px;
+  font-style: normal;
+  margin: 0;
 }
 
 .text-60px-black-italic {
@@ -75,6 +82,7 @@ button:hover {
   font-style: italic;
   font-weight: 900; /*black*/
   font-size: 60px;
+  margin: 0;
 }
 
 .text-50px-exbold-italic {
@@ -82,67 +90,88 @@ button:hover {
   font-style: italic;
   font-weight: 800; /*exbold*/
   font-size: 50px;
+  margin: 0;
 }
 
 .text-40px-reg {
   font-family: "Playfair Display", serif;
   font-weight: 400; /*regular*/
   font-size: 40px;
+  font-style: normal;
+  margin: 0;
 }
 .text-40px-exbold {
   font-family: "Playfair Display", serif;
   font-weight: 800; /*exbold*/
   font-size: 40px;
+  font-style: normal;
+  margin: 0;
 }
 .text-40px-exbold-italic {
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-weight: 800; /*exbold*/
   font-size: 40px;
+  margin: 0;
 }
 
 .text-30px-reg {
   font-weight: 400; /*regular*/
   font-size: 30px;
+  font-style: normal;
+  margin: 0;
 }
 
 .text-22px-reg {
   font-family: "Work Sans", sans-serif;
   font-weight: 400; /*regular*/
   font-size: 22px;
+  font-style: normal;
+  margin: 0;
 }
 
 .text-20px-reg {
   font-family: "Work Sans", sans-serif;
   font-weight: 400; /*regular*/
   font-size: 20px;
+  font-style: normal;
+  margin: 0;
 }
 
 .text-18px-reg {
   font-family: "Work Sans", sans-serif;
   font-weight: 400; /*regular*/
   font-size: 18px;
+  font-style: normal;
+  margin: 0;
 }
 
 .text-16px-reg {
   font-family: "Work Sans", sans-serif;
   font-weight: 400; /*regular*/
   font-size: 16px;
+  font-style: normal;
+  margin: 0;
 }
 .text-16px-reg-italic {
   font-family: "Work Sans", sans-serif;
   font-style: italic;
   font-weight: 400; /*regular*/
   font-size: 16px;
+  margin: 0;
 }
 .text-16px-semibold {
   font-family: "Work Sans", sans-serif;
   font-weight: 600; /*semibold*/
   font-size: 16px;
+  font-style: normal;
+  margin: 0;
 }
 .text-16px-reg-uc {
   font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 400; /*regular*/
   font-size: 16px;
+  font-style: normal;
+  margin: 0;
 }

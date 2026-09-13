@@ -1,47 +1,52 @@
 import decoration from "../img/card1-image.svg";
+import { css } from "@emotion/css";
+
+const c1_body = css({
+  display: "flex",
+  flexDirection: "column",
+  gap: "40px",
+});
+
+const c1_main_card = css({
+  display: "flex",
+  flexDirection: "row",
+  padding: "122px 88px 70px 73px",
+  borderRadius: "40px",
+  justifyContent: "space-between",
+});
+
+const c1_bottom_card = css({
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: "24px",
+  gap: "80px",
+  border: "1px solid #303030",
+  borderRadius: "24px",
+
+  "& div": {
+    width: "188px",
+  },
+
+  "& h2": {
+    marginBottom: "8px",
+  },
+});
+
+const c1_left_buttons = css({
+  display: "flex",
+  flexDirection: "row",
+  gap: "20px",
+});
 
 function Card1Home() {
   return (
     // Card1Home
     <>
-      <style>{`
-        .c1-body{
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-        }
-
-        .c1-main-card {
-            display: flex;
-            flex-direction: row;
-            padding: 122px 88px 70px 73px;
-            border-radius: 40px;
-            justify-content: space-between;
-        }
-
-        .c1-bottom-card {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 24px;
-            gap: 80px;
-            border: 1px solid #303030;
-            border-radius: 24px;
-        }
-
-        .c1-bottom-card div {
-            width: 188px;
-        }
-
-        .c1-bottom-card div h2 {
-            margin-bottom: 8px;
-        }
-      `}</style>
-
-      <div className="c1-body">
+      <div className={c1_body}>
         {/* main card */}
-        <div className=" color-yellow c1-main-card">
+        <div className={`color-yellow ${c1_main_card}`}>
           {/* left content */}
           <div
             style={{
@@ -63,10 +68,7 @@ function Card1Home() {
             </p>
 
             {/* buttons */}
-            <div
-              className=" text-20px-reg"
-              style={{ display: "flex", flexDirection: "row", gap: "20px" }}
-            >
+            <div className={`text-20px-reg ${c1_left_buttons}`}>
               <button className="color-grey">Apply Now</button>
               <button style={{ border: "1px solid #303030" }}>
                 Learn How It Works
@@ -85,7 +87,7 @@ function Card1Home() {
         </div>
 
         {/* bottom card */}
-        <div className="c1-bottom-card">
+        <div className={c1_bottom_card}>
           <div>
             <h2 className=" text-40px-exbold">82%</h2>
             <p className=" text-16px-reg">

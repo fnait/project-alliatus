@@ -1,0 +1,148 @@
+body {
+  margin: 80px auto 175px;
+  padding: 0;
+  max-width: 1710px;
+  color: #303030;
+}
+
+/* navigation settings */
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-place {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.color-yellow {
+  background-color: #ffdd81;
+}
+
+.color-grey {
+  background-color: #303030;
+}
+
+.text-color-white {
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 12px;
+  padding: 18px 40px;
+  background-color: inherit;
+}
+
+button:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+/* ---------------------------------- */
+/* 
+    Regular	    font-weight: 400
+    SemiBold	font-weight: 600
+    ExtraBold	font-weight: 800
+    Black	    font-weight: 900 
+*/
+
+.text-64px-exbold-italic {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 800; /*exbold*/
+  font-size: 64px;
+}
+
+.text-64px-reg {
+  font-family: "Playfair Display", serif;
+  font-weight: 400; /*regular*/
+  font-size: 64px;
+}
+
+.text-60px-black-italic {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 900; /*black*/
+  font-size: 60px;
+}
+
+.text-50px-exbold-italic {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 800; /*exbold*/
+  font-size: 50px;
+}
+
+.text-40px-reg {
+  font-family: "Playfair Display", serif;
+  font-weight: 400; /*regular*/
+  font-size: 40px;
+}
+.text-40px-exbold {
+  font-family: "Playfair Display", serif;
+  font-weight: 800; /*exbold*/
+  font-size: 40px;
+}
+.text-40px-exbold-italic {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 800; /*exbold*/
+  font-size: 40px;
+}
+
+.text-30px-reg {
+  font-weight: 400; /*regular*/
+  font-size: 30px;
+}
+
+.text-22px-reg {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400; /*regular*/
+  font-size: 22px;
+}
+
+.text-20px-reg {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400; /*regular*/
+  font-size: 20px;
+}
+
+.text-18px-reg {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400; /*regular*/
+  font-size: 18px;
+}
+
+.text-16px-reg {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400; /*regular*/
+  font-size: 16px;
+}
+.text-16px-reg-italic {
+  font-family: "Work Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400; /*regular*/
+  font-size: 16px;
+}
+.text-16px-semibold {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600; /*semibold*/
+  font-size: 16px;
+}
+.text-16px-reg-uc {
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400; /*regular*/
+  font-size: 16px;
+}

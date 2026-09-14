@@ -1,5 +1,5 @@
 import decoration from "../img/card1-image.svg";
-import { css } from "@emotion/css";
+import { css, cx } from "@emotion/css";
 
 const c1_body = css({
   display: "flex",
@@ -46,7 +46,7 @@ function Card1Home() {
     <>
       <div className={c1_body}>
         {/* main card */}
-        <div className={`color-yellow ${c1_main_card}`}>
+        <div className={cx(c1_main_card, "color-yellow")}>
           {/* left content */}
           <div
             style={{
@@ -68,7 +68,7 @@ function Card1Home() {
             </p>
 
             {/* buttons */}
-            <div className={`text-20px-reg ${c1_left_buttons}`}>
+            <div className={cx(c1_left_buttons, "text-20px-reg")}>
               <button className="color-grey">Apply Now</button>
               <button style={{ border: "1px solid #303030" }}>
                 Learn How It Works

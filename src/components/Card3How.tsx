@@ -1,5 +1,5 @@
 // import React from "react";
-import { css } from "@emotion/css";
+import { css, cx } from "@emotion/css";
 
 import img from "../img/card3-image.svg";
 import decoration from "../img/card3-decoration.svg";
@@ -9,7 +9,7 @@ const c3_body = css({
   position: "relative",
 });
 
-const c4_top_content = css({
+const c3_top_content = css({
   display: "flex",
   justifyContent: "space-between",
   flexFlow: "row",
@@ -23,7 +23,7 @@ const c4_top_content = css({
   },
 });
 
-const c4_tc_left = css({
+const c3_tc_left = css({
   display: "flex",
   flexDirection: "column",
   gap: "20px",
@@ -32,7 +32,7 @@ const c4_tc_left = css({
   marginBottom: "70px",
 });
 
-const c4_bot_content = css({
+const c3_bot_content = css({
   display: "grid",
   gridTemplateColumns: "426px 426px 426px",
   gridTemplateRows: "260px 260px 260px",
@@ -43,7 +43,7 @@ const c4_bot_content = css({
                 "box-4 box-7 box-7"`,
 });
 
-const c4_bc_card_set = css({
+const c3_bc_card_set = css({
   borderRadius: "24px",
   padding: " 15px 60px 0 40px",
 
@@ -52,7 +52,7 @@ const c4_bc_card_set = css({
   },
 });
 
-const c4_topic_text = css({
+const c3_topic_text = css({
   display: "flex",
   flexDirection: "row",
   alignItems: "end",
@@ -67,8 +67,8 @@ function Card3How() {
   return (
     <>
       <div className={c3_body}>
-        <div className={c4_top_content}>
-          <div className={c4_tc_left}>
+        <div className={c3_top_content}>
+          <div className={c3_tc_left}>
             <h1 className=" text-16px-reg-uc">How It Works</h1>
             <h2 className=" text-64px-reg">
               From Application to Transformation —
@@ -79,13 +79,13 @@ function Card3How() {
           <img src={decoration} alt="" />
         </div>
 
-        <div className={c4_bot_content}>
+        <div className={c3_bot_content}>
           {/* CARD1 - Template*/}
           <div
-            className={`color-yellow ${c4_bc_card_set}`}
+            className={cx(c3_bc_card_set, "color-yellow")}
             style={{ gridArea: "box-1" }}
           >
-            <div className={c4_topic_text}>
+            <div className={c3_topic_text}>
               <h2 className=" text-60px-black-italic">01</h2>
               <h3 className=" text-16px-reg-uc">Apply Online</h3>
             </div>
@@ -97,10 +97,10 @@ function Card3How() {
 
           {/* CARD2 - Template*/}
           <div
-            className={`color-white ${c4_bc_card_set}`}
+            className={cx(c3_bc_card_set, "color-white")}
             style={{ gridArea: "box-2" }}
           >
-            <div className={c4_topic_text}>
+            <div className={c3_topic_text}>
               <h2 className=" text-60px-black-italic">02</h2>
               <h3 className=" text-16px-reg-uc">Get Matched</h3>
             </div>
@@ -122,13 +122,13 @@ function Card3How() {
 
           {/* CARD3 - Template*/}
           <div
-            className={c4_bc_card_set}
+            className={c3_bc_card_set}
             style={{
               gridArea: "box-5",
               border: "1px solid #303030",
             }}
           >
-            <div className={c4_topic_text}>
+            <div className={c3_topic_text}>
               <h2 className=" text-60px-black-italic">03</h2>
               <h3 className=" text-16px-reg-uc">Get Matched</h3>
             </div>
@@ -140,10 +140,10 @@ function Card3How() {
 
           {/* CARD4 - Template*/}
           <div
-            className={`color-white ${c4_bc_card_set}`}
+            className={cx(c3_bc_card_set, "color-white")}
             style={{ gridArea: "box-6" }}
           >
-            <div className={c4_topic_text}>
+            <div className={c3_topic_text}>
               <h2 className=" text-60px-black-italic">04</h2>
               <h3 className=" text-16px-reg-uc">Grow With Accountability</h3>
             </div>

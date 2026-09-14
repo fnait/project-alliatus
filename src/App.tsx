@@ -4,6 +4,7 @@ import Card2About from "./components/Card2About";
 import Card3How from "./components/Card3How";
 import Card4WhoItsFor from "./components/Card4WhoItsFor";
 import Card5Testimonials from "./components/Card5Testimonials";
+import Card6Hosts from "./components/Card6Hosts";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Card3How />
         <Card4WhoItsFor />
         <Card5Testimonials />
+        <Card6Hosts />
       </div>
     </>
   );

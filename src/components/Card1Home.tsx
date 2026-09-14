@@ -22,7 +22,6 @@ const c1_bottom_card = css({
   alignItems: "center",
   padding: "24px",
   gap: "80px",
-  border: "1px solid #303030",
   borderRadius: "24px",
 
   "& div": {
@@ -70,9 +69,7 @@ function Card1Home() {
             {/* buttons */}
             <div className={cx(c1_left_buttons, "text-20px-reg")}>
               <button className="color-grey">Apply Now</button>
-              <button style={{ border: "1px solid #303030" }}>
-                Learn How It Works
-              </button>
+              <button className="color-border">Learn How It Works</button>
             </div>
 
             <p className=" text-16px-reg-italic">
@@ -87,7 +84,7 @@ function Card1Home() {
         </div>
 
         {/* bottom card */}
-        <div className={c1_bottom_card}>
+        <div className={cx("color-border", c1_bottom_card)}>
           <div>
             <h2 className=" text-40px-exbold">82%</h2>
             <p className=" text-16px-reg">

@@ -38,6 +38,10 @@ nav ul li a {
   background-color: #ffffff;
 }
 
+.color-border {
+  border: 1px solid #303030;
+}
+
 .text-color-white {
   color: #ffffff;
 }

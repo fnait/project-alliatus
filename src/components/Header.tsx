@@ -1,32 +1,38 @@
 import logo from "../img/logo.svg";
+import { css, cx } from "@emotion/css";
+
+const header_conteiner = css({
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "space-between",
+  marginBottom: "45px",
+});
+
+const h_content = css({
+  display: "flex",
+  flexDirection: "row",
+  gap: "50px",
+
+  "& ul": {
+    display: "flex",
+    flexDirection: "row",
+    gap: "50px",
+  },
+});
 
 function Header() {
   return (
     // header component
-    <div
-      className=" text-20px-reg"
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-between",
-        marginBottom: "45px",
-      }}
-    >
+    <div className={cx(header_conteiner, "text-20px-reg")}>
       {/* logo */}
       <img src={logo} alt="logotype" />
 
       {/* navigation + button */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          gap: "50px",
-        }}
-      >
+      <div className={h_content}>
         {/* navigation */}
         <nav aria-label="main-navigation">
-          <ul style={{ display: "flex", flexDirection: "row", gap: "50px" }}>
+          <ul>
             <li>
               <a href="#Home">Home</a>
             </li>
@@ -46,7 +52,7 @@ function Header() {
         </nav>
 
         {/* button */}
-        <button style={{ border: "1px solid #49342F" }}>Log in</button>
+        <button className="color-border">Log in</button>
       </div>
     </div>
   );

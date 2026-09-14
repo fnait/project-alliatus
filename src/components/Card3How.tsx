@@ -122,11 +122,8 @@ function Card3How() {
 
           {/* CARD3 - Template*/}
           <div
-            className={c3_bc_card_set}
-            style={{
-              gridArea: "box-5",
-              border: "1px solid #303030",
-            }}
+            className={cx(c3_bc_card_set, "color-border")}
+            style={{ gridArea: "box-5" }}
           >
             <div className={c3_topic_text}>
               <h2 className=" text-60px-black-italic">03</h2>

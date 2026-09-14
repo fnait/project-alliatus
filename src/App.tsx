@@ -9,10 +9,12 @@ function App() {
   return (
     <>
       <Header />
-      <Card1Home />
-      <Card2About />
-      <Card3How />
-      <Card4WhoItsFor />
+      <div className="card-space-between">
+        <Card1Home />
+        <Card2About />
+        <Card3How />
+        <Card4WhoItsFor />
+      </div>
     </>
   );
 }

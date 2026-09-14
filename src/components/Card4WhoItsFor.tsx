@@ -3,20 +3,16 @@ import decor_left from "../img/card4-decoration-left.svg";
 import decor_right from "../img/card4-decoration-right.svg";
 // import React from "react";
 
-const c4_main_container = css({
-  marginTop: "150px",
-});
-
 const c4_top_cont = css({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   textAlign: "center",
   gap: "20px",
+  marginBottom: "70px",
 });
 
 const c4_bot_cont = css({
-  marginTop: "70px",
   display: "flex",
   flexDirection: "row",
   gap: "40px",
@@ -64,8 +60,7 @@ const c4_image_holder = css({
 function Card4WhoItsFor() {
   return (
     <>
-      {/* main conteiner */}
-      <div className={c4_main_container}>
+      <div>
         {/* top info */}
         <div className={c4_top_cont}>
           <h1 className=" text-16px-reg-uc">Who It’s For</h1>

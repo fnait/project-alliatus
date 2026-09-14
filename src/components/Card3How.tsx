@@ -5,7 +5,6 @@ import img from "../img/card3-image.svg";
 import decoration from "../img/card3-decoration.svg";
 
 const c3_body = css({
-  marginTop: "150px",
   position: "relative",
 });
 

@@ -2,7 +2,6 @@ import decoration from "../img/card2-image.svg";
 import { css } from "@emotion/css";
 
 const c2_body = css({
-  marginTop: "150px",
   display: "flex",
   alignItems: "center",
   flexDirection: "column",

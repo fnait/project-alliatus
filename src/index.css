@@ -9,6 +9,12 @@ body {
   background-color: #f7f7f7;
 }
 
+.card-space-between {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
 /* navigation settings */
 nav ul {
   list-style: none;

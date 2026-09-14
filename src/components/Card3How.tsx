@@ -1,30 +1,74 @@
 // import React from "react";
-// import { css } from "@emotion/css";
+import { css } from "@emotion/css";
 
 import img from "../img/card3-image.svg";
 import decoration from "../img/card3-decoration.svg";
 
+const c3_body = css({
+  marginTop: "150px",
+  position: "relative",
+});
+
+const c4_top_content = css({
+  display: "flex",
+  justifyContent: "space-between",
+  flexFlow: "row",
+
+  "& img": {
+    position: "absolute",
+    top: "-40px",
+    right: "120px",
+    zIndex: 2,
+    pointerEvents: "none",
+  },
+});
+
+const c4_tc_left = css({
+  display: "flex",
+  flexDirection: "column",
+  gap: "20px",
+  height: "294px",
+  width: "648px",
+  marginBottom: "70px",
+});
+
+const c4_bot_content = css({
+  display: "grid",
+  gridTemplateColumns: "426px 426px 426px",
+  gridTemplateRows: "260px 260px 260px",
+  gap: "2.5rem",
+  gridTemplateAreas: `
+                "box-1 box-2 ."
+                "box-4 box-5 box-6"
+                "box-4 box-7 box-7"`,
+});
+
+const c4_bc_card_set = css({
+  borderRadius: "24px",
+  padding: " 15px 60px 0 40px",
+
+  "& p": {
+    lineHeight: "27px",
+  },
+});
+
+const c4_topic_text = css({
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "end",
+  paddingBottom: "15px",
+
+  "& h3": {
+    margin: "0 0 10px 15px",
+  },
+});
+
 function Card3How() {
   return (
     <>
-      <div style={{ marginTop: "150px", position: "relative" }}>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            flexFlow: "row",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              gap: "20px",
-              flexDirection: "column",
-              height: "294px",
-              width: "648px",
-              marginBottom: "70px",
-            }}
-          >
+      <div className={c3_body}>
+        <div className={c4_top_content}>
+          <div className={c4_tc_left}>
             <h1 className=" text-16px-reg-uc">How It Works</h1>
             <h2 className=" text-64px-reg">
               From Application to Transformation —
@@ -32,167 +76,84 @@ function Card3How() {
             </h2>
           </div>
 
-          <img
-            src={decoration}
-            alt=""
-            style={{
-              position: "absolute",
-              top: "-40px",
-              right: "120px",
-              zIndex: 2,
-              pointerEvents: "none",
-            }}
-          />
+          <img src={decoration} alt="" />
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "426px 426px 426px",
-            gridTemplateRows: "260px 260px 260px",
-            gap: "2.5rem",
-            gridTemplateAreas: `
-                "box-1 box-2 box-3"
-                "box-4 box-5 box-6"
-                "box-4 box-7 box-7"`,
-          }}
-        >
-          {/* CARD1 */}
+        <div className={c4_bot_content}>
+          {/* CARD1 - Template*/}
           <div
-            className="color-yellow"
-            style={{
-              gridArea: "box-1",
-              borderRadius: "24px",
-              padding: " 15px 60px 0 40px",
-            }}
+            className={`color-yellow ${c4_bc_card_set}`}
+            style={{ gridArea: "box-1" }}
           >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "end",
-                paddingBottom: "15px",
-              }}
-            >
+            <div className={c4_topic_text}>
               <h2 className=" text-60px-black-italic">01</h2>
-              <h3
-                className=" text-16px-reg-uc"
-                style={{ margin: "0 0 10px 15px" }}
-              >
-                Apply Online
-              </h3>
+              <h3 className=" text-16px-reg-uc">Apply Online</h3>
             </div>
-            <p className=" text-18px-reg" style={{ lineHeight: "27px" }}>
+            <p className=" text-18px-reg">
               Tell us about your goals, background, and what kind of support
               you’re seeking.
             </p>
           </div>
 
-          {/* CARD2 */}
+          {/* CARD2 - Template*/}
           <div
-            className="color-white"
-            style={{
-              gridArea: "box-2",
-              borderRadius: "24px",
-              padding: " 15px 60px 0 40px",
-            }}
+            className={`color-white ${c4_bc_card_set}`}
+            style={{ gridArea: "box-2" }}
           >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "end",
-                paddingBottom: "15px",
-              }}
-            >
+            <div className={c4_topic_text}>
               <h2 className=" text-60px-black-italic">02</h2>
-              <h3
-                className=" text-16px-reg-uc"
-                style={{ margin: "0 0 10px 15px" }}
-              >
-                Get Matched
-              </h3>
+              <h3 className=" text-16px-reg-uc">Get Matched</h3>
             </div>
-            <p className=" text-18px-reg" style={{ lineHeight: "27px" }}>
+            <p className=" text-18px-reg">
               We carefully place you in a mastermind circle of 5–6 aligned
               members.
             </p>
           </div>
 
-          {/* CARD3 */}
-          <div style={{ gridArea: "box-3", backgroundColor: "none" }}></div>
-
-          {/* CARD4 */}
+          {/*WIDE - Left*/}
           <div
             style={{
               gridArea: "box-4",
-              backgroundColor: "black",
               borderRadius: "24px",
             }}
           >
             <img src={img} alt="image" />
           </div>
 
+          {/* CARD3 - Template*/}
           <div
+            className={c4_bc_card_set}
             style={{
               gridArea: "box-5",
-              borderRadius: "24px",
-              padding: " 15px 60px 0 40px",
               border: "1px solid #303030",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "end",
-                paddingBottom: "15px",
-              }}
-            >
+            <div className={c4_topic_text}>
               <h2 className=" text-60px-black-italic">03</h2>
-              <h3
-                className=" text-16px-reg-uc"
-                style={{ margin: "0 0 10px 15px" }}
-              >
-                Get Matched
-              </h3>
+              <h3 className=" text-16px-reg-uc">Get Matched</h3>
             </div>
-            <p className=" text-18px-reg" style={{ lineHeight: "27px" }}>
+            <p className=" text-18px-reg">
               We carefully place you in a mastermind circle of 5–6 aligned
               members.
             </p>
           </div>
 
+          {/* CARD4 - Template*/}
           <div
-            className="color-white"
-            style={{
-              gridArea: "box-6",
-              borderRadius: "24px",
-              padding: " 15px 60px 0 40px",
-            }}
+            className={`color-white ${c4_bc_card_set}`}
+            style={{ gridArea: "box-6" }}
           >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "end",
-                paddingBottom: "15px",
-              }}
-            >
-              <h2 className=" text-60px-black-italic">02</h2>
-              <h3
-                className=" text-16px-reg-uc"
-                style={{ margin: "0 0 10px 15px" }}
-              >
-                Get Matched
-              </h3>
+            <div className={c4_topic_text}>
+              <h2 className=" text-60px-black-italic">04</h2>
+              <h3 className=" text-16px-reg-uc">Grow With Accountability</h3>
             </div>
-            <p className=" text-18px-reg" style={{ lineHeight: "27px" }}>
-              We carefully place you in a mastermind circle of 5–6 aligned
-              members.
+            <p className=" text-18px-reg">
+              Set goals, stay on track, and get continuous feedback from your
+              circle.
             </p>
           </div>
 
+          {/*WIDE - Bottom*/}
           <div
             className="color-white"
             style={{

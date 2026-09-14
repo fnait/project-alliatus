@@ -1,7 +1,6 @@
 import { css, cx } from "@emotion/css";
 import decor_left from "../img/card4-decoration-left.svg";
 import decor_right from "../img/card4-decoration-right.svg";
-// import React from "react";
 
 const c4_top_cont = css({
   display: "flex",

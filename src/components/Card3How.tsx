@@ -1,4 +1,3 @@
-// import React from "react";
 import { css, cx } from "@emotion/css";
 
 import img from "../img/card3-image.svg";
